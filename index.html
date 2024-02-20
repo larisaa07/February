@@ -47,32 +47,44 @@
 
             <!--name and score section-->
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm-6">
                     <button onclick="userName()">Click to enter your name:</button>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-6">
                     <h2 id="score">Score:</h2>
                 </div>
             </div>
 
+            
+            <div class="row-sm-10">
+                
             <!--your choices-->
-            <div class="row-md-10">
-                <h1>Your Choice:</h1>
+                <div class="col-md-6">
+                    <h1>Your Choice:</h1>
+
+                    <div class="row">
+                        <button onclick="playRound('Rock')" class="btn btn-secondary">Rock</button>
+                    </div>
+
+                    <div class="row">
+                        <button onclick="playRound('Paper')" class="btn btn-secondary">Paper</button>
+                    </div>
+
+                    <div class="row">
+                        <button onclick="playRound('Scissor')" class="btn btn-secondary">Scissor</button>
+                    </div>
+                </div>
+
+            <!--Computer Choice-->
+                <div class="col-md-6">
+                    <h1>Computer Choice:</h1>
+                    <img src="imgs/computerPic.jpg" alt="" id="compChoice">
+                </div>
+        
             </div>
-            <div class="row-md-10">
-                <div class="col-lg-3">
-                    <img src="" alt="picture of a rock">
-                    <h2>Rock</h2>
-                </div>
-                <div class="col-lg-3">
-                    <img src="imgs/linedPaper.jpg" alt="picture of a paper">
-                    <h2>Paper</h2>
-                </div>
-                <div class="col-lg-3">
-                    <img src="" alt="picture of a scissor">
-                    <h2>Scissor</h2>
-                </div>
-            </div>
+
+            
+
 
 
 
