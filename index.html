@@ -18,6 +18,11 @@
         <!--link to my css-->
         <link href="style.css" rel="stylesheet">
 
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
@@ -47,12 +52,23 @@
 
             <!--name and score section-->
             <div class="row">
-                <div class="col-sm-6">
-                    <button onclick="userName()">Click to enter your name:</button>
+                <div class="col-sm-6" id="inputName">
+                    <div class="col-sm-3">
+                        <label for="userName" class="form-label">Enter Username:</label>
+                        <input type="text" class="form-control" id="userName" placeholder="Name"/>
+                    </div>
+                    <div class="col-sm-3">
+                        <button onclick="displayName" class="btn btn-secondary">Enter</button>
+                    </div>
                 </div>
+
                 <div class="col-sm-6">
                     <h2 id="score">Score:</h2>
                 </div>
+            </div>
+
+            <div class="row-sm-10">
+                <p id="welcomes"></p>
             </div>
 
             
