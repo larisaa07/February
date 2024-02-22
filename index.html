@@ -52,13 +52,15 @@
 
             <!--name and score section-->
             <div class="row">
-                <div class="col-sm-6" id="inputName">
-                    <div class="col-sm-3">
-                        <label for="userName" class="form-label">Enter Username:</label>
-                        <input type="text" class="form-control" id="userName" placeholder="Name"/>
+                <div class="col-sm-6" >
+                    <div class="row">
+                        <label for="userName" class="form-label" id="responseText">Enter Username:</label>
                     </div>
-                    <div class="col-sm-3">
-                        <button onclick="displayName" class="btn btn-secondary">Enter</button>
+                    
+                    <div class="row" id="nameInput">
+                        <input type="text" class="form-control" id="userName" placeholder="Name"/>
+
+                        <button onclick="start()" class="btn btn-secondary">Enter</button>
                     </div>
                 </div>
 
@@ -67,16 +69,14 @@
                 </div>
             </div>
 
-            <div class="row-sm-10">
-                <p id="welcomes"></p>
-            </div>
-
             
             <div class="row-sm-10">
                 
             <!--your choices-->
                 <div class="col-md-6">
-                    <h1>Your Choice:</h1>
+                    <div class="row">
+                        <h1>Your Choice:</h1>
+                    </div>
 
                     <div class="row">
                         <button onclick="playRound('Rock')" class="btn btn-secondary">Rock</button>
@@ -108,13 +108,27 @@
 
         </div>
         
-
-
-
-
-        <footer>
-            <!-- place footer here -->
+        <!--footer start-->
+        <footer class="bg-light text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Github -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: rgb(0, 255, 255);" href="https://github.com/larisaa07" target="_blank" role="button"><i class="fab fa-github"></i>Github</a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+      
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(150, 100, 207, 0.473);">
+             © 2024 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Larisa Avetisyan</a>
+            </div>
+            <!-- Copyright -->
         </footer>
+        <!--footer end-->
 
         <!-- Bootstrap JavaScript Libraries -->
         <script

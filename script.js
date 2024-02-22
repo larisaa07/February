@@ -1,14 +1,14 @@
 function start (){
     //get the name from the form
     let name = document.getElementById('userName').value;
-    
-    //what will happen if you enter nothing; then if you enter a name
+        
+
     if (name === null){
-        document.getElementById('userName').innerText = 'Enter your name!'
+        document.getElementById('responseText').innerText = 'Please enter a name!!'
     }else{
-        document.getElementById('welcomes').innerText = 'Welcome and good luck, ' + name
-        document.getElementById('inputName').classList.add('d-done');
+        document.getElementById('responseText').innerText = 'Welcome and good luck, ' + name
+        document.getElementById('nameInput').classList.add('d-none');
     }
 }
 
-//need to fix this so that the if then statement works and the text changes if it is null
+//need to fix this so that the if then statement works and the text changes if it is null; also make sure the text box disappears when the enter button is clicked
