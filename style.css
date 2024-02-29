@@ -54,3 +54,27 @@ h2{
 .form-label{
     font-size:20px;
 }
+
+#userScore{
+    font-size:20px;
+    border-color:aqua;
+    border-width:2px;
+    border-style:solid;
+    padding:5px;
+    text-align:center;
+    margin:10px;
+}
+
+#compScore{
+    font-size:20px;
+    border-color:aqua;
+    border-width:2px;
+    border-style:solid;
+    padding:5px;
+    text-align:center;
+    margin:10px;
+}
+
+#buttons:active{
+    box-shadow: 2px;
+}

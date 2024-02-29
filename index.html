@@ -62,7 +62,17 @@
             </div>
 
             <div class="col-sm-6">
-                <h2 id="score">Score:</h2>
+                <div class="row">
+                    <div class="col-3" id="userScore">
+                        User Score:
+                    </div>
+                    <div class="col-3" id="compScore">
+                        Computer Score:
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <h1 id="determineWinner">Who Wins?</h1>
+                </div>
             </div>
         </div>
 
@@ -76,22 +86,23 @@
                 </div>
 
                 <div class="row">
-                    <button onclick="playRound('Rock')" class="btn btn-secondary">🪨 Rock 🪨</button>
+                    <button onclick="playRound('Rock')" class="btn btn-secondary" id="buttons">🪨 Rock 🪨</button>
                 </div>
 
                 <div class="row">
-                    <button onclick="playRound('Paper')" class="btn btn-secondary">📄 Paper 📄</button>
+                    <button onclick="playRound('Paper')" class="btn btn-secondary" id="buttons">📄 Paper 📄</button>
                 </div>
 
                 <div class="row">
-                    <button onclick="playRound('Scissor')" class="btn btn-secondary">✂ Scissor ✂</button>
+                    <button onclick="playRound('Scissors')" class="btn btn-secondary" id="buttons">✂ Scissor ✂</button>
                 </div>
             </div>
 
             <!--Computer Choice-->
             <div class="col-md-5">
                 <h1>Computer Choice:</h1>
-                <img src="imgs/computerPic.jpg" alt="picture of a computer" id="compChoice">
+                <img src="imgs/computerPic.jpg" alt="picture of a computer" id="compChoiceImg">
+                <h4 id="compChoice">Comp. Choice</h4>
             </div>
 
         </div>
