@@ -8,14 +8,11 @@ let roundResult
 function start (){
     //get the name from the form
     let name = document.getElementById('userName').value;
-        
-    if (name === null){
-        document.getElementById('responseText').innerText = 'Please enter a name!!'
-    }else{
-        document.getElementById('responseText').innerText = 'Welcome and good luck, ' + name
+    document.getElementById('responseText').innerText = 'Welcome and good luck, ' + name
         document.getElementById('nameInput').classList.add('d-none');
-    }
+
 }
+
 
 //getting your choice and the computer choice
 function playGame(userSelection) {
@@ -24,10 +21,13 @@ function playGame(userSelection) {
     //the possible random choices:
     if (randomNumber === 0){
         compChoice = 'Rock'
+        document.getElementById('compChoice').innerText = '🪨 Rock 🪨';
     }else if (randomNumber === 1){
         compChoice = 'Paper'
-    }else (randomNumber === 2){
+        document.getElementById('compChoice').innerText = '📄 Paper 📄';
+    }else{
         compChoice = 'Scissors'
+        document.getElementById('compChoice').innerText = '✂ Scissor ✂';
     }
 
     userChoice = userSelection
@@ -46,7 +46,7 @@ function playGame(userSelection) {
         compScore++;
         roundResult = "You lose!"
 
-        updateDisplayInfor()
+        updateDisplayInfo()
         isGameOver()
     }
   }
@@ -62,5 +62,12 @@ function playGame(userSelection) {
   }
 
   function updateDisplayInfo(){
-    
+    document.getElementById('userScore').innerText = userScore;
+    document.getElementById('compScore').innerText = compScore;
+    document.getElementById('result').innerText = `You: ${userChoice}, Computer: ${compChoice} ${roundResult}`;
+  }
+
+  //button to reload page
+  function reload(){
+    location.reload()
   }
